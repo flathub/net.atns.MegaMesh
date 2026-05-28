@@ -1,0 +1,128 @@
+{
+  "app-id": "net.atns.MegaMesh",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "6.10",
+  "sdk": "org.kde.Sdk",
+  "command": "megamesh-editor",
+
+  "finish-args": [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc",
+    "--device=dri"
+  ],
+
+  "cleanup": [
+    "/include",
+    "/lib",
+    "/share/doc",
+    "/share/glm"
+  ],
+
+  "modules": [
+    {
+      "name": "glm",
+      "buildsystem": "cmake",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/g-truc/glm.git",
+          "tag": "1.0.3",
+          "commit": "8d1fd52e5ab5590e2c81768ace50c72bae28f2ed"
+        }
+      ]
+    },
+    {
+      "name": "rapidjson",
+      "buildsystem": "cmake",
+      "config-opts": [
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+        "-DRAPIDJSON_BUILD_DOC=OFF",
+        "-DRAPIDJSON_BUILD_EXAMPLES=OFF",
+        "-DRAPIDJSON_BUILD_TESTS=OFF"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/Tencent/rapidjson.git",
+          "commit": "24b5e7a8b27f42fa16b96fc70aade9106cf7102f"
+        }
+      ]
+    },
+    {
+      "name": "assimp",
+      "buildsystem": "cmake",
+      "config-opts": [
+        "-DBUILD_SHARED_LIBS=OFF",
+        "-DASSIMP_BUILD_TESTS=OFF",
+        "-DASSIMP_BUILD_ASSIMP_TOOLS=OFF",
+        "-DASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT=OFF",
+        "-DASSIMP_BUILD_GLTF_IMPORTER=ON",
+        "-DASSIMP_BUILD_OBJ_IMPORTER=ON",
+        "-DASSIMP_BUILD_FBX_IMPORTER=ON",
+        "-DASSIMP_BUILD_COLLADA_IMPORTER=ON",
+        "-DASSIMP_BUILD_STL_IMPORTER=ON",
+        "-DASSIMP_BUILD_PLY_IMPORTER=ON",
+        "-DASSIMP_BUILD_3DS_IMPORTER=ON",
+        "-DASSIMP_NO_EXPORT=ON"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/assimp/assimp.git",
+          "tag": "v6.0.4",
+          "commit": "e0b52347c6e52de2827ec957a9ebf00ce3c54f79"
+        }
+      ]
+    },
+    {
+      "name": "fastlane",
+      "buildsystem": "cmake",
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.com/attnns/fastlane.git",
+          "tag": "v1.0",
+          "commit": "0445f09cdf8e86815516d3d009483e8bf8946c1a"
+        }
+      ]
+    },
+    {
+      "name": "megamesh",
+      "buildsystem": "cmake",
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.com/attnns/megamesh.git",
+          "tag": "v1.0",
+          "commit": "c82fd97a1c20b51d6c748852d366719b96f4d886"
+        }
+      ]
+    },
+    {
+      "name": "megamesh-editor",
+      "buildsystem": "cmake",
+      "config-opts": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/app",
+        "-DFLATPAK_BUILD=ON"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.com/attnns/megamesh-editor.git",
+          "tag": "v1.0",
+          "commit": "a4b80b7ac75c410352bcbe4865ec50ab7d78bae2"
+        }
+      ]
+    }
+  ]
+}
