@@ -22,7 +22,7 @@
   "modules": [
     {
       "name": "glm",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "sources": [
         {
           "type": "git",
@@ -34,7 +34,7 @@
     },
     {
       "name": "rapidjson",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
         "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
         "-DRAPIDJSON_BUILD_DOC=OFF",
@@ -51,7 +51,7 @@
     },
     {
       "name": "assimp",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
         "-DBUILD_SHARED_LIBS=OFF",
         "-DASSIMP_BUILD_TESTS=OFF",
@@ -77,10 +77,9 @@
     },
     {
       "name": "fastlane",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_INSTALL_PREFIX=/app"
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "sources": [
         {
@@ -93,10 +92,9 @@
     },
     {
       "name": "megamesh",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_INSTALL_PREFIX=/app"
+        "-DCMAKE_BUILD_TYPE=Release"
       ],
       "sources": [
         {
@@ -109,10 +107,9 @@
     },
     {
       "name": "megamesh-editor",
-      "buildsystem": "cmake",
+      "buildsystem": "cmake-ninja",
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_INSTALL_PREFIX=/app",
         "-DFLATPAK_BUILD=ON"
       ],
       "sources": [
