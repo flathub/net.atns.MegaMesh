@@ -70,8 +70,8 @@
         {
           "type": "git",
           "url": "https://github.com/assimp/assimp.git",
-          "tag": "v6.0.4",
-          "commit": "e0b52347c6e52de2827ec957a9ebf00ce3c54f79"
+          "tag": "v6.0.5",
+          "commit": "392a658f9c271be965271f45e7521a1b80ea4392"
         }
       ]
     },
@@ -85,8 +85,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/fastlane.git",
-          "tag": "v1.0",
-          "commit": "0445f09cdf8e86815516d3d009483e8bf8946c1a"
+          "tag": "v1.0.2",
+          "commit": "668adfe34601a6d95d06b9cd4b167262c9ea7582"
         }
       ]
     },
@@ -100,8 +100,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh.git",
-          "tag": "v1.0",
-          "commit": "c82fd97a1c20b51d6c748852d366719b96f4d886"
+          "tag": "v1.0.2",
+          "commit": "1e1eccd85e89dc86bbdfb8b03995b5db9235cc3b"
         }
       ]
     },
@@ -116,8 +116,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh-editor.git",
-          "tag": "v1.0",
-          "commit": "a4b80b7ac75c410352bcbe4865ec50ab7d78bae2"
+          "tag": "v1.0.2",
+          "commit": "18a3a788730cf3668042526d6d87fab1a7d0283d"
         }
       ]
     }
