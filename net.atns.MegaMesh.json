@@ -100,8 +100,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh.git",
-          "tag": "v1.0.2",
-          "commit": "1e1eccd85e89dc86bbdfb8b03995b5db9235cc3b"
+          "tag": "v1.0.3",
+          "commit": "c051ff69d40f640481544b611bafbe352f82162e"
         }
       ]
     },
@@ -116,8 +116,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh-editor.git",
-          "tag": "v1.0.2",
-          "commit": "18a3a788730cf3668042526d6d87fab1a7d0283d"
+          "tag": "v1.0.3",
+          "commit": "ef35a2d4b2b24ce0354e0d74e1188b68fac9f474"
         }
       ]
     }
