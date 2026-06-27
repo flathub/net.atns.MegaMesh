@@ -116,8 +116,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh-editor.git",
-          "tag": "v1.0.5",
-          "commit": "2ada77c6c4e21cd13add58cc162ec7b28a8ea2e7"
+          "tag": "v1.0.6",
+          "commit": "95878a2d614d8eae62f4df432cc1b08122825296"
         }
       ]
     }
