@@ -85,8 +85,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/fastlane.git",
-          "tag": "v1.0.3",
-          "commit": "f67c2fcefe089671c0b8a9c34ee71c1cc8669ea8"
+          "tag": "v1.0.4",
+          "commit": "b7ae00b33c16c0f9cb8fb769f3a1b72c47a0f631"
         }
       ]
     },
@@ -100,8 +100,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh.git",
-          "tag": "v1.0.5",
-          "commit": "ff1452494f00ddad4fa27a8b3c298fedd4b58d2d"
+          "tag": "v1.0.6",
+          "commit": "638ef7fdd37a532dd0aa45f7257f6fb5bf5e19bc"
         }
       ]
     },
@@ -116,8 +116,8 @@
         {
           "type": "git",
           "url": "https://gitlab.com/attnns/megamesh-editor.git",
-          "tag": "v1.1.0",
-          "commit": "732488dc974acc593ee807cc92f3b980e8870ead"
+          "tag": "v1.2.0",
+          "commit": "d3e5a8967f2b2909600247aa1dd08e752d828351"
         }
       ]
     }
